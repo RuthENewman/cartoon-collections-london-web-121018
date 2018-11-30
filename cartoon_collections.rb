@@ -1,13 +1,19 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(names)
+    names.each do |name| 
+    puts name
+  end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
-end
+def summon_captain_planet(calls)
+  calls.map! { |call| puts call.capitalize + "!"}
+end 
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(calls)
+  
+  if calls.count > 4
+    true 
+  else 
+    false
 end
 
 def find_the_cheese# code an argument here
